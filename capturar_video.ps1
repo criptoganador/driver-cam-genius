@@ -6,6 +6,17 @@
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 
+# =======================================================================
+# LLAMADAS DE INICIALIZACION AUTOMATICA
+# =======================================================================
+Write-Host "`n[+] LLAMANDO AL MODULO: encender_camara.ps1" -ForegroundColor Magenta
+& (Join-Path $PSScriptRoot "encender_camara.ps1")
+
+Write-Host "`n[+] LLAMANDO AL MODULO: inicializar_sensor_sif.ps1" -ForegroundColor Magenta
+& (Join-Path $PSScriptRoot "inicializar_sensor_sif.ps1")
+
+Write-Host "`n=== TODOS LOS MODULOS INICIALIZADOS, INICIANDO CAPTURA ===" -ForegroundColor Cyan
+
 if (-not ([System.Management.Automation.PSTypeName]'GeniusFinal.WinUsbFinalEngine').Type) {
     $Signature = @"
     using System;
@@ -134,48 +145,6 @@ if (-not ([System.Management.Automation.PSTypeName]'GeniusFinal.WinUsbFinalEngin
     Add-Type -TypeDefinition $Signature
 }
 
-function Write-CoreReg ([IntPtr]$Intf, [uint16]$Reg, [byte]$Val) {
-    $Pkt = New-Object GeniusFinal.WINUSB_SETUP_PACKET
-    $Pkt.RequestType = 0x41; $Pkt.Request = 0x08; $Pkt.Value = $Reg; $Pkt.Length = 1
-    $Buf = New-Object byte[] 1; $Buf[0] = $Val; [uint32]$Transferred = 0
-    $null = [GeniusFinal.WinUsbFinalEngine]::WinUsb_ControlTransfer($Intf, $Pkt, $Buf, 1, [ref]$Transferred, [IntPtr]::Zero)
-}
-
-function Write-CoreRegBlock ([IntPtr]$Intf, [uint16]$Reg, [byte[]]$Buf) {
-    $Pkt = New-Object GeniusFinal.WINUSB_SETUP_PACKET
-    $Pkt.RequestType = 0x41; $Pkt.Request = 0x08; $Pkt.Value = $Reg; $Pkt.Length = [uint16]$Buf.Length
-    [uint32]$Transferred = 0
-    $null = [GeniusFinal.WinUsbFinalEngine]::WinUsb_ControlTransfer($Intf, $Pkt, $Buf, [uint32]$Buf.Length, [ref]$Transferred, [IntPtr]::Zero)
-}
-
-function Write-SensorRegister ([IntPtr]$Intf, [byte]$Register, [byte]$Value) {
-    # Protocolo SIF de 3 pasos via registros del puente Sonix (el unico que funciona)
-    # 1. Cargar la direccion del registro destino del sensor
-    Write-CoreReg -Intf $Intf -Reg 0x09 -Value $Register
-    # 2. Cargar el valor a inyectar
-    Write-CoreReg -Intf $Intf -Reg 0x0A -Value $Value
-    # 3. Disparar el estrobo de hardware (0x11 = Write 1 Byte + SIF Start)
-    Write-CoreReg -Intf $Intf -Reg 0x10 -Value 0x11
-
-    # 4. Polling: esperar a que el estrobo se limpie (el hardware lo pone a 0x00 al terminar)
-    $PktRead = New-Object GeniusFinal.WINUSB_SETUP_PACKET
-    $PktRead.RequestType = 0xC1; $PktRead.Request = 0x00; $PktRead.Value = 0x10; $PktRead.Length = 1
-    $BufRead = New-Object byte[] 1; [uint32]$Read = 0
-
-    $StrobeCleared = $false
-    for ($retry = 0; $retry -lt 20; $retry++) {
-        $null = [GeniusFinal.WinUsbFinalEngine]::WinUsb_ControlTransfer($Intf, $PktRead, $BufRead, 1, [ref]$Read, [IntPtr]::Zero)
-        if ($BufRead[0] -eq 0x00) {
-            $StrobeCleared = $true
-            break
-        }
-        [System.Threading.Thread]::Sleep(2)
-    }
-
-    if (-not $StrobeCleared) {
-        Write-Host "[-] Timeout SIF Reg 0x$('{0:X2}' -f $Register) (estrobo atascado en 0x$('{0:X2}' -f $BufRead[0]))" -ForegroundColor Yellow
-    }
-}
 
 $PnpDevice = Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -like '*VID_0C45&PID_60B0&MI_00*' } | Select-Object -First 1
 if (-not $PnpDevice) { Write-Host '[-] Hardware Genius no detectado.' -ForegroundColor Red; exit }
@@ -203,41 +172,10 @@ try {
     }
     Write-Host '[+] Alternate Setting 1 activo en controlador de host.' -ForegroundColor Green
 
-    # --- SECUENCIA MAESTRA INTEGRAD (DESPUÉS DEL ALT SETTING) ---
-    Write-Host '[...] Configurando puente Sonix (bloque 25 bytes)...' -ForegroundColor Gray
-    $InitBlock = [byte[]](
-        0x04, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x81, 
-        0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
-        0x00, 0x04, 0x01, 0x00, 0x16, 0x12, 0x24, 0x86, 0x2b
-    )
-    Write-CoreRegBlock -Intf $WinusbHandle -Reg 0x01 -Buf $InitBlock
-
-    # Estabilizacion galvanica del oscilador del sensor (obligatorio)
-    Start-Sleep -Milliseconds 35
-
-    # Configurar velocidad segura del bus SIF y direccion del esclavo PAS106
-    # (el InitBlock deja Reg 0x0B = 0x00, sin slave address -> causa todos los fallos SIF)
-    Write-Host '[...] Configurando bus SIF: velocidad segura + slave address 0x40...' -ForegroundColor Gray
-    Write-CoreReg -Intf $WinusbHandle -Reg 0x08 -Value 0x14  # SIF clock divider seguro
-    Write-CoreReg -Intf $WinusbHandle -Reg 0x0B -Value 0x40  # Slave address del PAS106B
-
-    Write-Host '[...] Inyectando secuencias operativas en la matriz PixArt (PAS106)...' -ForegroundColor Cyan
-    # Tabla de registros correcta del PAS106B (extraida de inicializar_sensor_sif.ps1 probado)
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x02 -Value 0x0C # Modo y reloj interno
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x03 -Value 0x40 # Pixel Clock Polarity
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x04 -Value 0x05 # Modo ventana de captura
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x05 -Value 0x24 # Supresion de ruido termico
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x06 -Value 0x0A # DAC de referencia analogica
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x09 -Value 0x0E # Ganancia global del amplificador
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x0E -Value 0x1A # Tiempo de exposicion - bit bajo
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x0F -Value 0x00 # Tiempo de exposicion - bit alto
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x10 -Value 0x06 # Control flanco sincronismo vertical
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x11 -Value 0x01 # Modo escaneo progresivo (anti-flicker)
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x14 -Value 0x03 # Rango dinamico y compresion
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x15 -Value 0x01 # Activar salida Bayer (color digital)
-    # CRITICO: Reg 0x13 = 0x01 activa fisicamente la exposicion del sensor
-    # Con 0x02 el sensor queda en standby y solo emite ceros
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x13 -Value 0x01 # ENCENDER EXPOSICION
+    # --- LA INICIALIZACION SE HA MOVIDO ---
+    # Este script asume que la inicialización ya fue realizada por:
+    # 1. encender_camara.ps1
+    # 2. inicializar_sensor_sif.ps1
 
     Write-Host '[!] HARDWARE EMITIENDO FLUJO NATIVO.' -ForegroundColor Green
     # CONFIRMADO: 16 paquetes x 128 bytes = 2048 bytes por llamada (limite del dispositivo)
@@ -275,7 +213,11 @@ catch {
 finally {
     if ($null -ne $FileStream) { $FileStream.Close(); $FileStream.Dispose() }
     if ($WinusbHandle -ne [IntPtr]::Zero) {
-        Write-CoreReg -Intf $WinusbHandle -Reg 0x01 -Value 0x04
+        $Pkt = New-Object GeniusFinal.WINUSB_SETUP_PACKET
+        $Pkt.RequestType = 0x41; $Pkt.Request = 0x08; $Pkt.Value = 0x01; $Pkt.Length = 1
+        $Buf = New-Object byte[] 1; $Buf[0] = 0x04; [uint32]$Transferred = 0
+        $null = [GeniusFinal.WinUsbFinalEngine]::WinUsb_ControlTransfer($WinusbHandle, $Pkt, $Buf, 1, [ref]$Transferred, [IntPtr]::Zero)
+        
         $null = [GeniusFinal.WinUsbFinalEngine]::WinUsb_Free($WinusbHandle)
     }
     if ($hFile -ne [IntPtr]::Zero -and $hFile.ToInt64() -ne -1) { $null = [GeniusFinal.WinUsbFinalEngine]::CloseHandle($hFile) }
