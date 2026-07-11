@@ -222,25 +222,22 @@ try {
     Write-CoreReg -Intf $WinusbHandle -Reg 0x0B -Value 0x40  # Slave address del PAS106B
 
     Write-Host '[...] Inyectando secuencias operativas en la matriz PixArt (PAS106)...' -ForegroundColor Cyan
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x02 -Value 0x04 # Pixel Clock Divider 6
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x03 -Value 0x13 # Frame Time MSB
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x04 -Value 0x0a # Frame Time LSB
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x05 -Value 0x25 # Shutter Width MSB
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x06 -Value 0x80 # Shutter Width LSB
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x07 -Value 0x00 # Global Gain
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x08 -Value 0x01 # Gain Color
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x09 -Value 0x01 # Gain Color
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x0a -Value 0x01 # Gain Color
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x0b -Value 0x01 # Gain Color
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x0c -Value 0x05 # Color Matrix
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x0d -Value 0x00 
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x0e -Value 0x00 
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x0f -Value 0x00 
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x10 -Value 0x05 
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x11 -Value 0x00 
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x12 -Value 0x06 # DAC Scale
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x14 -Value 0x02 # Window start/end
-    Write-SensorRegister -Intf $WinusbHandle -Register 0x13 -Value 0x02 
+    # Tabla de registros correcta del PAS106B (extraida de inicializar_sensor_sif.ps1 probado)
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x02 -Value 0x0C # Modo y reloj interno
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x03 -Value 0x40 # Pixel Clock Polarity
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x04 -Value 0x05 # Modo ventana de captura
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x05 -Value 0x24 # Supresion de ruido termico
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x06 -Value 0x0A # DAC de referencia analogica
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x09 -Value 0x0E # Ganancia global del amplificador
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x0E -Value 0x1A # Tiempo de exposicion - bit bajo
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x0F -Value 0x00 # Tiempo de exposicion - bit alto
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x10 -Value 0x06 # Control flanco sincronismo vertical
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x11 -Value 0x01 # Modo escaneo progresivo (anti-flicker)
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x14 -Value 0x03 # Rango dinamico y compresion
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x15 -Value 0x01 # Activar salida Bayer (color digital)
+    # CRITICO: Reg 0x13 = 0x01 activa fisicamente la exposicion del sensor
+    # Con 0x02 el sensor queda en standby y solo emite ceros
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x13 -Value 0x01 # ENCENDER EXPOSICION
 
     Write-Host '[!] HARDWARE EMITIENDO FLUJO NATIVO.' -ForegroundColor Green
     # CONFIRMADO: 16 paquetes x 128 bytes = 2048 bytes por llamada (limite del dispositivo)
