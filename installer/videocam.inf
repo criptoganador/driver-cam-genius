@@ -1,0 +1,33 @@
+[Version]
+Signature   = "$Windows NT$"
+Class       = USBDevice
+ClassGUID   = {88bae032-5a81-49f0-bc3d-a4ff138216d6}
+Provider    = %ProviderName%
+CatalogFile = videocam.cat
+DriverVer   = 07/07/2026,1.0.0.0
+
+[Manufacturer]
+%ManufacturerName% = Standard, NTamd64
+
+[Standard.NTamd64]
+%DeviceName% = USB_Install, USB\VID_0C45&PID_60B0&MI_00
+
+[USB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+[USB_Install.Services]
+Include = winusb.inf
+Needs   = WINUSB.NT.Services
+
+[USB_Install.HW]
+AddReg = Dev_AddReg
+
+[Dev_AddReg]
+; 0x00010000 indica tipo REG_MULTI_SZ (Cadena múltiple para registro)
+HKR,,DeviceInterfaceGUIDs,0x00010000,"{dee30225-b74a-47bd-8e34-5c9c991fdf99}"
+
+[Strings]
+ProviderName     = "Jhoan Gavidia"
+ManufacturerName = "Microdia Custom Drivers"
+DeviceName       = "Genius VideoCam Look (Video Interface MI_00)"
