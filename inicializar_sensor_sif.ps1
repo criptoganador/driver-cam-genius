@@ -142,9 +142,9 @@ try {
         @{ Reg = 0x0F; Val = 0x00 }  # Tiempo de exposición - Bit alto
         @{ Reg = 0x10; Val = 0x06 }  # Control del flanco de sincronismo vertical
         @{ Reg = 0x11; Val = 0x01 }  # Modo de escaneo progresivo (Anti-flicker activado)
-        @{ Reg = 0x13; Val = 0x06 }  # Calibración automática del nivel de negros (Offset)
         @{ Reg = 0x14; Val = 0x03 }  # Relación de compresión interna y rango dinámico
         @{ Reg = 0x15; Val = 0x01 }  # Activar salida de matriz de color digital (Bayer Pattern)
+        @{ Reg = 0x13; Val = 0x01 }  # [NUEVO] ¡CRUCIAL! Escribir 1 para validar configuración y encender exposición
     )
 
     # Iteración síncrona sobre la matriz usando nuestra primitiva de control segura

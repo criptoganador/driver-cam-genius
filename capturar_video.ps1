@@ -2,6 +2,10 @@
 # FASE 4 (PRODUCCION): CAPTURA ISOCRONA EN ALINEACION DE BUS DE 128 BYTES
 # =======================================================================
 
+# Forzar UTF-8 en la consola para evitar caracteres corruptos
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
+
 if (-not ([System.Management.Automation.PSTypeName]'GeniusFinal.WinUsbFinalEngine').Type) {
     $Signature = @"
     using System;
@@ -137,6 +141,42 @@ function Write-CoreReg ([IntPtr]$Intf, [uint16]$Reg, [byte]$Val) {
     $null = [GeniusFinal.WinUsbFinalEngine]::WinUsb_ControlTransfer($Intf, $Pkt, $Buf, 1, [ref]$Transferred, [IntPtr]::Zero)
 }
 
+function Write-CoreRegBlock ([IntPtr]$Intf, [uint16]$Reg, [byte[]]$Buf) {
+    $Pkt = New-Object GeniusFinal.WINUSB_SETUP_PACKET
+    $Pkt.RequestType = 0x41; $Pkt.Request = 0x08; $Pkt.Value = $Reg; $Pkt.Length = [uint16]$Buf.Length
+    [uint32]$Transferred = 0
+    $null = [GeniusFinal.WinUsbFinalEngine]::WinUsb_ControlTransfer($Intf, $Pkt, $Buf, [uint32]$Buf.Length, [ref]$Transferred, [IntPtr]::Zero)
+}
+
+function Write-SensorRegister ([IntPtr]$Intf, [byte]$Register, [byte]$Value) {
+    # Protocolo SIF de 3 pasos via registros del puente Sonix (el unico que funciona)
+    # 1. Cargar la direccion del registro destino del sensor
+    Write-CoreReg -Intf $Intf -Reg 0x09 -Value $Register
+    # 2. Cargar el valor a inyectar
+    Write-CoreReg -Intf $Intf -Reg 0x0A -Value $Value
+    # 3. Disparar el estrobo de hardware (0x11 = Write 1 Byte + SIF Start)
+    Write-CoreReg -Intf $Intf -Reg 0x10 -Value 0x11
+
+    # 4. Polling: esperar a que el estrobo se limpie (el hardware lo pone a 0x00 al terminar)
+    $PktRead = New-Object GeniusFinal.WINUSB_SETUP_PACKET
+    $PktRead.RequestType = 0xC1; $PktRead.Request = 0x00; $PktRead.Value = 0x10; $PktRead.Length = 1
+    $BufRead = New-Object byte[] 1; [uint32]$Read = 0
+
+    $StrobeCleared = $false
+    for ($retry = 0; $retry -lt 20; $retry++) {
+        $null = [GeniusFinal.WinUsbFinalEngine]::WinUsb_ControlTransfer($Intf, $PktRead, $BufRead, 1, [ref]$Read, [IntPtr]::Zero)
+        if ($BufRead[0] -eq 0x00) {
+            $StrobeCleared = $true
+            break
+        }
+        [System.Threading.Thread]::Sleep(2)
+    }
+
+    if (-not $StrobeCleared) {
+        Write-Host "[-] Timeout SIF Reg 0x$('{0:X2}' -f $Register) (estrobo atascado en 0x$('{0:X2}' -f $BufRead[0]))" -ForegroundColor Yellow
+    }
+}
+
 $PnpDevice = Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -like '*VID_0C45&PID_60B0&MI_00*' } | Select-Object -First 1
 if (-not $PnpDevice) { Write-Host '[-] Hardware Genius no detectado.' -ForegroundColor Red; exit }
 $CameraPath = '\\?\' + $PnpDevice.InstanceId.Replace('\', '#') + '#{dee824ef-729b-4a0e-9c14-b7117d33a817}'
@@ -163,9 +203,46 @@ try {
     }
     Write-Host '[+] Alternate Setting 1 activo en controlador de host.' -ForegroundColor Green
 
-    Write-CoreReg -Intf $WinusbHandle -Reg 0x01 -Value 0x0C
-    Write-Host '[!] HARDWARE EMITIENDO FLUJO NATIVO.' -ForegroundColor Green
+    # --- SECUENCIA MAESTRA INTEGRAD (DESPUÉS DEL ALT SETTING) ---
+    Write-Host '[...] Configurando puente Sonix (bloque 25 bytes)...' -ForegroundColor Gray
+    $InitBlock = [byte[]](
+        0x04, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x81, 
+        0x40, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+        0x00, 0x04, 0x01, 0x00, 0x16, 0x12, 0x24, 0x86, 0x2b
+    )
+    Write-CoreRegBlock -Intf $WinusbHandle -Reg 0x01 -Buf $InitBlock
 
+    # Estabilizacion galvanica del oscilador del sensor (obligatorio)
+    Start-Sleep -Milliseconds 35
+
+    # Configurar velocidad segura del bus SIF y direccion del esclavo PAS106
+    # (el InitBlock deja Reg 0x0B = 0x00, sin slave address -> causa todos los fallos SIF)
+    Write-Host '[...] Configurando bus SIF: velocidad segura + slave address 0x40...' -ForegroundColor Gray
+    Write-CoreReg -Intf $WinusbHandle -Reg 0x08 -Value 0x14  # SIF clock divider seguro
+    Write-CoreReg -Intf $WinusbHandle -Reg 0x0B -Value 0x40  # Slave address del PAS106B
+
+    Write-Host '[...] Inyectando secuencias operativas en la matriz PixArt (PAS106)...' -ForegroundColor Cyan
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x02 -Value 0x04 # Pixel Clock Divider 6
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x03 -Value 0x13 # Frame Time MSB
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x04 -Value 0x0a # Frame Time LSB
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x05 -Value 0x25 # Shutter Width MSB
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x06 -Value 0x80 # Shutter Width LSB
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x07 -Value 0x00 # Global Gain
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x08 -Value 0x01 # Gain Color
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x09 -Value 0x01 # Gain Color
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x0a -Value 0x01 # Gain Color
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x0b -Value 0x01 # Gain Color
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x0c -Value 0x05 # Color Matrix
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x0d -Value 0x00 
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x0e -Value 0x00 
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x0f -Value 0x00 
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x10 -Value 0x05 
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x11 -Value 0x00 
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x12 -Value 0x06 # DAC Scale
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x14 -Value 0x02 # Window start/end
+    Write-SensorRegister -Intf $WinusbHandle -Register 0x13 -Value 0x02 
+
+    Write-Host '[!] HARDWARE EMITIENDO FLUJO NATIVO.' -ForegroundColor Green
     # CONFIRMADO: 16 paquetes x 128 bytes = 2048 bytes por llamada (limite del dispositivo)
     $PacketSize = [uint32]128
     $NumPackets = [uint32]16
