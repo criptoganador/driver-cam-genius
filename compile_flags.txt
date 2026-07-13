@@ -1,0 +1,8 @@
+# Configuración del estándar
+-std=c++23
+-fmodules
+-Wall
+-Wextra
+
+# Rutas de los headers (MinGW)
+-IC:\mingw64\x86_64-w64-mingw32\include
