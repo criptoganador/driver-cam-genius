@@ -22,7 +22,7 @@ public:
     // Devuelve un std::expected con el frame completo si se ha formado uno
     std::expected<std::vector<uint8_t>, bool> process_chunk(std::span<const uint8_t> data) {
         
-        for (const auto& byte : data) {
+        for ([[maybe_unused]] const auto& byte : data) {
             switch (current_state) {
                 case ProtocolState::WaitingForHeader:
                     // Aquí buscaremos los "Magic Bytes" (ej. 0x55, 0xAA)
@@ -32,7 +32,10 @@ public:
                     // Aquí acumulamos datos en frame_buffer
                     break;
                 // ... más estados
-            }
+                case ProtocolState::FrameComplete:
+                case ProtocolState::Error:
+                  break;
+                }
         }
         
         return std::unexpected(false); // Aún no hay frame completo

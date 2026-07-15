@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -I\"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src\" -g -std=c++23 -Wall -Wextra -O0 -o CMakeFiles\\driver_genius.dir\\src\\main.cpp.obj -c \"C:\\Users\\jhoan\\Desktop\\app de desarrollo\\driver-genius-look\\src\\main.cpp\"",
+  "file": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src/main.cpp",
+  "output": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/driver_genius.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -I\"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src\" -g -std=c++23 -Wall -Wextra -O0 -o CMakeFiles\\driver_genius.dir\\src\\driver_core.cpp.obj -c \"C:\\Users\\jhoan\\Desktop\\app de desarrollo\\driver-genius-look\\src\\driver_core.cpp\"",
+  "file": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src/driver_core.cpp",
+  "output": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/driver_genius.dir/src/driver_core.cpp.obj"
+},
+{
+  "directory": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -I\"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src\" -g -std=c++23 -Wall -Wextra -O0 -o CMakeFiles\\driver_genius.dir\\src\\genius_ilook_317.cpp.obj -c \"C:\\Users\\jhoan\\Desktop\\app de desarrollo\\driver-genius-look\\src\\genius_ilook_317.cpp\"",
+  "file": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src/genius_ilook_317.cpp",
+  "output": "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/driver_genius.dir/src/genius_ilook_317.cpp.obj"
+}
+]

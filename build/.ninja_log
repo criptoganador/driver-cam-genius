@@ -1,0 +1,5 @@
+# ninja log v7
+27	4098	8058457739292366	CMakeFiles/driver_genius.dir/src/genius_ilook_317.cpp.obj	5a39e58284ef4e13
+22	4190	8058457739292366	CMakeFiles/driver_genius.dir/src/driver_core.cpp.obj	4032b4e0799c6e4e
+17	4192	8058457739135795	CMakeFiles/driver_genius.dir/src/main.cpp.obj	ccfe8dd2605ce849
+4192	4984	8058457781016310	driver_genius.exe	6332edb2b554aecf

@@ -1,6 +1,5 @@
 #include "driver_core.hpp"
 #include <iostream>
-#include <iomanip>
 
 std::expected<std::vector<uint8_t>, driver_error> camera_controller::get_configuration_descriptor() {
     
@@ -76,4 +75,4 @@ void camera_controller::log_device_info() const {
     }
     std::cout << "----------------------------------------------\n";
 }
-
+

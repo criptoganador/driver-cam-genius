@@ -1,34 +1,35 @@
 module;
 
-#include <Windows.h> // Cambiado de windows.h a Windows.h
-#include <expected>
-#include <string_view>
+// Global Module Fragment: headers legacy van aquí, antes de export module
+#include <Windows.h>
+#include <winusb.h>
 
-export module driver.core;
+export module driver.types;
 
-import driver.types;
-import std;
+// ─── Tipos de error del driver ────────────────────────────────────────────────
+export enum class driver_error {
+    device_not_found,
+    device_io_failed,
+    connection_failed,
+    descriptor_read_failed
+};
 
-namespace genius::driver {
+// ─── RAII wrapper para HANDLE de Windows ──────────────────────────────────────
+export struct safe_handle {
+    HANDLE value = INVALID_HANDLE_VALUE;
 
-    export class camera_controller {
-    public:
-        static std::expected<camera_controller, driver_error> connect(std::string_view device_path) {
-            HANDLE h_device = CreateFileA(
-                device_path.data(),
-                GENERIC_READ | GENERIC_WRITE,
-                0,
-                nullptr,
-                OPEN_EXISTING,
-                FILE_ATTRIBUTE_NORMAL | FILE_FLAG_OVERLAPPED,
-                nullptr
-            );
+    explicit safe_handle(HANDLE h) : value(h) {}
 
-            if (h_device == INVALID_HANDLE_VALUE) {
-                return std::unexpected(driver_error::device_not_found);
-            }
+    safe_handle(const safe_handle&) = delete;
+    safe_handle& operator=(const safe_handle&) = delete;
 
-            return camera_controller{safe_handle(h_device)};
+    safe_handle(safe_handle&& other) noexcept : value(other.value) {
+        other.value = INVALID_HANDLE_VALUE;
+    }
+
+    ~safe_handle() {
+        if (value != INVALID_HANDLE_VALUE) {
+            CloseHandle(value);
         }
-    };
-}
+    }
+};

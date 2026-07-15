@@ -1,10 +1,16 @@
+// ─── Global Module Fragment ────────────────────────────────────────────────────
+// Los #include DEBEN ir aquí, ANTES de 'export module'.
+// Esto hace que las cabeceras pertenezcan al módulo global (no a driver.core),
+// evitando el error mismatched_owning_module.
+module;
+#include <vector>
+#include <expected>
+#include <cstdint>
+
+// ─── Módulo nombrado ───────────────────────────────────────────────────────────
 export module driver.core;
 
-import <vector>;
-import <expected>;
-import <cstdint>; // Asegúrate de tener estos imports
-
-// 1. Exportamos el tipo de error para que sea visible en .cpp
+// 1. Exportamos el tipo de error
 export enum class driver_error {
     device_io_failed,
     connection_failed
@@ -13,11 +19,8 @@ export enum class driver_error {
 // 2. Exportamos la clase
 export class camera_controller {
 private:
-    void* winusb_handle; // Asumo que este es el nombre de tu miembro privado
+    void* winusb_handle;
 
 public:
-    // Declaración de la función
     static std::expected<std::vector<uint8_t>, driver_error> get_configuration_descriptor();
-    
-    // ... otros métodos ...
 };

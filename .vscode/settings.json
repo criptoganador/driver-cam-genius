@@ -1,0 +1,22 @@
+{
+    // ─── CMake Tools: forzar preset MinGW ────────────────────────────────────
+    // Esto evita que VS Code re-configure CMake con LLVM clang del PATH.
+    "cmake.configurePreset": "mingw-debug",
+    "cmake.buildPreset": "mingw-debug",
+
+    // No pedir confirmación al configurar
+    "cmake.configureOnOpen": true,
+    "cmake.automaticReconfigure": true,
+
+    // ─── clangd: usar compile_commands.json de la raíz ───────────────────────
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}",
+        "--background-index",
+        "--clang-tidy",
+        "--header-insertion=never",
+        "--log=error"
+    ],
+
+    // ─── C/C++ IntelliSense: desactivar (usamos clangd) ─────────────────────
+    "C_Cpp.intelliSenseEngine": "disabled"
+}

@@ -1,8 +1,25 @@
 CompileFlags:
-  Add: 
+  # clangd usará compile_commands.json generado por CMake (en raíz del proyecto).
+  # Solo añadimos el target para que clangd sepa que es MinGW y no MSVC.
+  Add:
+    - "--target=x86_64-w64-mingw32"
     - "-std=c++23"
+
+  # Eliminar flags que clangd no entiende o que causan conflictos
+  Remove:
     - "-fmodules"
-    - "-fimplicit-modules"
-    - "-fimplicit-module-maps"
-  # Esto le dice a clangd que ejecute tu compilador para descubrir los caminos
-  Compiler: C:\Program Files\LLVM\bin\clang++.exe
+    - "-fmodule-file=*"
+    - "/W*"
+    - "/w*"
+
+Diagnostics:
+  # Suprimir errores de módulos C++20 (driver_core.cppm usa 'export module'
+  # que clangd todavía maneja de forma limitada)
+  Suppress:
+    - "module*"
+    - "import*"
+
+InlayHints:
+  Enabled: true
+  ParameterNames: true
+  DeducedTypes: true

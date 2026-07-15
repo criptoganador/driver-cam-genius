@@ -3,11 +3,10 @@
 #include <cstdint>
 #include <cstring> // Para std::memcpy
 #include <span>    // Para std::span
-#include <algorithm>
 
 // Alineación estricta a 1 byte para mapeo directo a memoria de hardware
-#pragma pack(push, 1)
 namespace hw_usb {
+#pragma pack(push, 1)
 
 struct USB_CONFIGURATION_DESCRIPTOR {
     uint8_t  bLength;
@@ -42,7 +41,7 @@ struct USB_ENDPOINT_DESCRIPTOR {
 };
 
 #pragma pack(pop)
-}
+} // namespace hw_usb
 
 // ... dentro de usb_descriptors.hpp, después del namespace anterior ...
 

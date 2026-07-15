@@ -1,22 +1,68 @@
 #include <iostream>
 #include <vector>
-#include <iomanip>
 #include <windows.h>
 #include <winusb.h>
 #include "driver_core.hpp"
 #include "genius_ilook_317.hpp"
 
-// NOTA: Reemplaza este string con el Device Path que obtuviste con tu mapper.ps1
-// Ejemplo: "\\\\?\\usb#vid_xxxx&pid_xxxx#..."
-const char* DEVICE_PATH = "\\\\?\\usb#vid_0c45&pid_60b0&mi_00#6&2056681f&0&0000#{dee30225-b74a-47bd-8e34-5c9c991fdf99}";
+#include <setupapi.h>
+#include <string>
+
+// GUID de la interfaz del dispositivo (Obtenido de la instalación de WinUSB)
+// {dee30225-b74a-47bd-8e34-5c9c991fdf99}
+const GUID WINUSB_INTERFACE_GUID = { 0xdee30225, 0xb74a, 0x47bd, { 0x8e, 0x34, 0x5c, 0x9c, 0x99, 0x1f, 0xdf, 0x99 } };
+
+std::string GetDevicePath(const GUID& interfaceGuid) {
+    HDEVINFO deviceInfoSet = SetupDiGetClassDevsA(&interfaceGuid, NULL, NULL, DIGCF_PRESENT | DIGCF_DEVICEINTERFACE);
+    if (deviceInfoSet == INVALID_HANDLE_VALUE) {
+        return "";
+    }
+
+    SP_DEVICE_INTERFACE_DATA deviceInterfaceData;
+    deviceInterfaceData.cbSize = sizeof(SP_DEVICE_INTERFACE_DATA);
+
+    // Obtenemos el primer dispositivo que coincida con este GUID
+    if (!SetupDiEnumDeviceInterfaces(deviceInfoSet, NULL, &interfaceGuid, 0, &deviceInterfaceData)) {
+        SetupDiDestroyDeviceInfoList(deviceInfoSet);
+        return "";
+    }
+
+    DWORD requiredSize = 0;
+    SetupDiGetDeviceInterfaceDetailA(deviceInfoSet, &deviceInterfaceData, NULL, 0, &requiredSize, NULL);
+
+    if (requiredSize == 0) {
+        SetupDiDestroyDeviceInfoList(deviceInfoSet);
+        return "";
+    }
+
+    std::vector<uint8_t> buffer(requiredSize);
+    PSP_DEVICE_INTERFACE_DETAIL_DATA_A deviceInterfaceDetailData = reinterpret_cast<PSP_DEVICE_INTERFACE_DETAIL_DATA_A>(buffer.data());
+    deviceInterfaceDetailData->cbSize = sizeof(SP_DEVICE_INTERFACE_DETAIL_DATA_A);
+
+    if (!SetupDiGetDeviceInterfaceDetailA(deviceInfoSet, &deviceInterfaceData, deviceInterfaceDetailData, requiredSize, NULL, NULL)) {
+        SetupDiDestroyDeviceInfoList(deviceInfoSet);
+        return "";
+    }
+
+    std::string devicePath = deviceInterfaceDetailData->DevicePath;
+    SetupDiDestroyDeviceInfoList(deviceInfoSet);
+    return devicePath;
+}
 
 int main() {
     std::cout << "--- Iniciando driver_genius: Conectando con hardware ---" << std::endl;
 
+    std::string devicePath = GetDevicePath(WINUSB_INTERFACE_GUID);
+    if (devicePath.empty()) {
+        std::cerr << "Error: No se pudo encontrar el dispositivo. ¿Esta conectada la camara?" << std::endl;
+        return 1;
+    }
+
+    std::cout << "Dispositivo detectado en puerto dinamico: \n" << devicePath << std::endl;
 
     // 1. Abrir el dispositivo
     HANDLE hDevice = CreateFileA(
-        DEVICE_PATH,
+        devicePath.c_str(),
         GENERIC_READ | GENERIC_WRITE,
         FILE_SHARE_READ | FILE_SHARE_WRITE,
         NULL,

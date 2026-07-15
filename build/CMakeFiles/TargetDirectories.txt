@@ -1,0 +1,3 @@
+C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/driver_genius.dir
+C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/edit_cache.dir
+C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/rebuild_cache.dir
