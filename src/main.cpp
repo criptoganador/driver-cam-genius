@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <winusb.h>
 #include "driver_core.hpp"
+#include "genius_ilook_317.hpp"
 
 // NOTA: Reemplaza este string con el Device Path que obtuviste con tu mapper.ps1
 // Ejemplo: "\\\\?\\usb#vid_xxxx&pid_xxxx#..."
@@ -11,6 +12,7 @@ const char* DEVICE_PATH = "\\\\?\\usb#vid_0c45&pid_60b0&mi_00#6&2056681f&0&0000#
 
 int main() {
     std::cout << "--- Iniciando driver_genius: Conectando con hardware ---" << std::endl;
+
 
     // 1. Abrir el dispositivo
     HANDLE hDevice = CreateFileA(
@@ -50,6 +52,12 @@ int main() {
         std::cout << "Exito, datos recibidos." << std::endl;
         auto& buffer = *result;
         std::cout << "Tamano: " << buffer.size() << " bytes." << std::endl;
+
+        // Mostrar desglose de hardware
+        cam.log_device_info();
+        
+        // 5. Inicializamos la Genius iLook 317
+        InitializeGenius317(winusb_handle);
     }
 
     // Limpieza

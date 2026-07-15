@@ -14,7 +14,7 @@ Write-Host "--- Compilando todo el proyecto ---" -ForegroundColor Cyan
 
 # Compilamos y enlazamos todo directamente
 # Nota: Como ya no usamos módulos, compilamos los archivos fuente (.cpp) directamente
-& $compiler $cxx_flags src/driver_core.cpp src/main.cpp -o build/driver_genius.exe -lsetupapi -lwinusb
+& $compiler $cxx_flags src/driver_core.cpp src/genius_ilook_317.cpp src/main.cpp -o build/driver_genius.exe -lsetupapi -lwinusb
 
 if (Test-Path "build/driver_genius.exe") {
     Write-Host "¡Build exitoso! Ejecutable listo en build/driver_genius.exe" -ForegroundColor Green
