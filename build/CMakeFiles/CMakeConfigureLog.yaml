@@ -36,7 +36,6 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -119,7 +118,6 @@ events:
       - "strip"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -134,6 +132,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -146,7 +145,6 @@ events:
     found: "C:/msys64/ucrt64/bin/strip.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -207,7 +205,6 @@ events:
       - "ld"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -222,6 +219,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -234,7 +232,6 @@ events:
     found: "C:/msys64/ucrt64/bin/ld.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -295,7 +292,6 @@ events:
       - "nm"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -310,6 +306,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -322,7 +319,6 @@ events:
     found: "C:/msys64/ucrt64/bin/nm.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -383,7 +379,6 @@ events:
       - "objdump"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -398,6 +393,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -410,7 +406,6 @@ events:
     found: "C:/msys64/ucrt64/bin/objdump.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -471,7 +466,6 @@ events:
       - "objcopy"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -486,6 +480,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -498,7 +493,6 @@ events:
     found: "C:/msys64/ucrt64/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -559,7 +553,6 @@ events:
       - "readelf"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -574,6 +567,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -586,7 +580,6 @@ events:
     found: "C:/msys64/ucrt64/bin/readelf.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -647,7 +640,6 @@ events:
       - "dlltool"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -662,6 +654,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -674,7 +667,6 @@ events:
     found: "C:/msys64/ucrt64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -735,7 +727,6 @@ events:
       - "addr2line"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -750,6 +741,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -762,7 +754,6 @@ events:
     found: "C:/msys64/ucrt64/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -823,7 +814,6 @@ events:
       - "tapi"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -838,6 +828,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -849,9 +840,6 @@ events:
       - "C:/msys64/ucrt64/bin/tapi.com"
       - "C:/msys64/ucrt64/bin/tapi.exe"
       - "C:/msys64/ucrt64/bin/tapi"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/tapi.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/tapi.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/tapi"
       - "C:/Python314/Scripts/tapi.com"
       - "C:/Python314/Scripts/tapi.exe"
       - "C:/Python314/Scripts/tapi"
@@ -894,6 +882,9 @@ events:
       - "C:/Program Files/LLVM/bin/tapi.com"
       - "C:/Program Files/LLVM/bin/tapi.exe"
       - "C:/Program Files/LLVM/bin/tapi"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/tapi.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/tapi.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/tapi"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/tapi.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/tapi.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/tapi"
@@ -918,7 +909,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -982,7 +972,6 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -997,6 +986,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -1008,9 +998,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1"
       - "C:/Python314/Scripts/gcc-ar-16.1.com"
       - "C:/Python314/Scripts/gcc-ar-16.1.exe"
       - "C:/Python314/Scripts/gcc-ar-16.1"
@@ -1053,6 +1040,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ar-16.1.com"
       - "C:/Program Files/LLVM/bin/gcc-ar-16.1.exe"
       - "C:/Program Files/LLVM/bin/gcc-ar-16.1"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.1.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.1.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.1"
@@ -1077,9 +1067,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar-16.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-16"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16"
       - "C:/Python314/Scripts/gcc-ar-16.com"
       - "C:/Python314/Scripts/gcc-ar-16.exe"
       - "C:/Python314/Scripts/gcc-ar-16"
@@ -1122,6 +1109,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ar-16.com"
       - "C:/Program Files/LLVM/bin/gcc-ar-16.exe"
       - "C:/Program Files/LLVM/bin/gcc-ar-16"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16"
@@ -1146,9 +1136,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar16.com"
       - "C:/msys64/ucrt64/bin/gcc-ar16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar16"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16"
       - "C:/Python314/Scripts/gcc-ar16.com"
       - "C:/Python314/Scripts/gcc-ar16.exe"
       - "C:/Python314/Scripts/gcc-ar16"
@@ -1191,6 +1178,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ar16.com"
       - "C:/Program Files/LLVM/bin/gcc-ar16.exe"
       - "C:/Program Files/LLVM/bin/gcc-ar16"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar16.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar16.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar16"
@@ -1216,7 +1206,6 @@ events:
     found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -1280,7 +1269,6 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -1295,6 +1283,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -1306,9 +1295,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1"
       - "C:/Python314/Scripts/gcc-ranlib-16.1.com"
       - "C:/Python314/Scripts/gcc-ranlib-16.1.exe"
       - "C:/Python314/Scripts/gcc-ranlib-16.1"
@@ -1351,6 +1337,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.1.com"
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.1.exe"
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.1"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.1.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.1.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.1"
@@ -1375,9 +1364,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16"
       - "C:/Python314/Scripts/gcc-ranlib-16.com"
       - "C:/Python314/Scripts/gcc-ranlib-16.exe"
       - "C:/Python314/Scripts/gcc-ranlib-16"
@@ -1420,6 +1406,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.com"
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.exe"
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16"
@@ -1444,9 +1433,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib16.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib16"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16"
       - "C:/Python314/Scripts/gcc-ranlib16.com"
       - "C:/Python314/Scripts/gcc-ranlib16.exe"
       - "C:/Python314/Scripts/gcc-ranlib16"
@@ -1489,6 +1475,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ranlib16.com"
       - "C:/Program Files/LLVM/bin/gcc-ranlib16.exe"
       - "C:/Program Files/LLVM/bin/gcc-ranlib16"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib16.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib16.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib16"
@@ -1514,7 +1503,6 @@ events:
     found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -1581,7 +1569,6 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -1667,7 +1654,6 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -1682,6 +1668,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -1693,9 +1680,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1"
       - "C:/Python314/Scripts/gcc-ar-16.1.com"
       - "C:/Python314/Scripts/gcc-ar-16.1.exe"
       - "C:/Python314/Scripts/gcc-ar-16.1"
@@ -1738,6 +1722,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ar-16.1.com"
       - "C:/Program Files/LLVM/bin/gcc-ar-16.1.exe"
       - "C:/Program Files/LLVM/bin/gcc-ar-16.1"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.1"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.1.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.1.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.1"
@@ -1762,9 +1749,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar-16.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-16"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16"
       - "C:/Python314/Scripts/gcc-ar-16.com"
       - "C:/Python314/Scripts/gcc-ar-16.exe"
       - "C:/Python314/Scripts/gcc-ar-16"
@@ -1807,6 +1791,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ar-16.com"
       - "C:/Program Files/LLVM/bin/gcc-ar-16.exe"
       - "C:/Program Files/LLVM/bin/gcc-ar-16"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar-16"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar-16"
@@ -1831,9 +1818,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar16.com"
       - "C:/msys64/ucrt64/bin/gcc-ar16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar16"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16"
       - "C:/Python314/Scripts/gcc-ar16.com"
       - "C:/Python314/Scripts/gcc-ar16.exe"
       - "C:/Python314/Scripts/gcc-ar16"
@@ -1876,6 +1860,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ar16.com"
       - "C:/Program Files/LLVM/bin/gcc-ar16.exe"
       - "C:/Program Files/LLVM/bin/gcc-ar16"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ar16"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar16.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar16.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ar16"
@@ -1901,7 +1888,6 @@ events:
     found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -1965,7 +1951,6 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Python314/Scripts/"
       - "C:/Python314/"
       - "C:/Windows/System32/"
@@ -1980,6 +1965,7 @@ events:
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Users/jhoan/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/jhoan/AppData/Local/Python/bin/"
@@ -1991,9 +1977,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1"
       - "C:/Python314/Scripts/gcc-ranlib-16.1.com"
       - "C:/Python314/Scripts/gcc-ranlib-16.1.exe"
       - "C:/Python314/Scripts/gcc-ranlib-16.1"
@@ -2036,6 +2019,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.1.com"
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.1.exe"
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.1"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.1"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.1.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.1.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.1"
@@ -2060,9 +2046,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16"
       - "C:/Python314/Scripts/gcc-ranlib-16.com"
       - "C:/Python314/Scripts/gcc-ranlib-16.exe"
       - "C:/Python314/Scripts/gcc-ranlib-16"
@@ -2105,6 +2088,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.com"
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16.exe"
       - "C:/Program Files/LLVM/bin/gcc-ranlib-16"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib-16"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib-16"
@@ -2129,9 +2115,6 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib16.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib16"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16.com"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16.exe"
-      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16"
       - "C:/Python314/Scripts/gcc-ranlib16.com"
       - "C:/Python314/Scripts/gcc-ranlib16.exe"
       - "C:/Python314/Scripts/gcc-ranlib16"
@@ -2174,6 +2157,9 @@ events:
       - "C:/Program Files/LLVM/bin/gcc-ranlib16.com"
       - "C:/Program Files/LLVM/bin/gcc-ranlib16.exe"
       - "C:/Program Files/LLVM/bin/gcc-ranlib16"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16.com"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16.exe"
+      - "C:/Users/jhoan/.gemini/antigravity-ide/bin/gcc-ranlib16"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib16.com"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib16.exe"
       - "C:/Users/jhoan/AppData/Local/Programs/Eclipse Adoptium/jdk-25.0.2.10-hotspot/bin/gcc-ranlib16"
@@ -2199,7 +2185,6 @@ events:
     found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
-        - "C:/Users/jhoan/.gemini/antigravity-ide/bin"
         - "C:\\Python314\\Scripts\\"
         - "C:\\Python314\\"
         - "C:\\Windows\\system32"
@@ -2248,8 +2233,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-ckxmax"
-      binary: "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-ckxmax"
+      source: "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-k9ehwl"
+      binary: "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-k9ehwl"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -2259,10 +2244,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-ckxmax'
+        Change Dir: 'C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-k9ehwl'
         
-        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_5382b
-        [1/2] C:\\msys64\\ucrt64\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_1cf11
+        [1/2] C:\\msys64\\ucrt64\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
@@ -2270,8 +2255,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_5382b.dir/'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5382b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccjTfHbC.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_1cf11.dir/'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1cf11.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\jhoan\\AppData\\Local\\Temp\\cc3O0Xra.s
         GNU C23 (Rev5, Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 16.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
         
@@ -2289,13 +2274,13 @@ events:
          C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed
         End of search list.
         Compiler executable checksum: 8ce1135867793bb4ef554b26be63cf3e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_5382b.dir/'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccjTfHbC.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_1cf11.dir/'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj C:\\Users\\jhoan\\AppData\\Local\\Temp\\cc3O0Xra.s
         GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\gcc.exe  -v -Wl,-v CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj -o cmTC_5382b.exe -Wl,--out-implib,libcmTC_5382b.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\gcc.exe  -v -Wl,-v CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj -o cmTC_1cf11.exe -Wl,--out-implib,libcmTC_1cf11.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe
@@ -2306,12 +2291,12 @@ events:
         gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5382b.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_5382b.'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccVGVu0Y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5382b.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_5382b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1cf11.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1cf11.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccOk1kZX.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1cf11.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_1cf11.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         collect2 version 16.1.0
-        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccVGVu0Y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5382b.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_5382b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccOk1kZX.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1cf11.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_1cf11.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         GNU ld (GNU Binutils) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5382b.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_5382b.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1cf11.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1cf11.'
         
       exitCode: 0
   -
@@ -2344,10 +2329,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-ckxmax']
+        ignore line: [Change Dir: 'C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-k9ehwl']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_5382b]
-        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_1cf11]
+        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2355,8 +2340,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.0 (Rev5  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_5382b.dir/']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5382b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccjTfHbC.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_1cf11.dir/']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_1cf11.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\jhoan\\AppData\\Local\\Temp\\cc3O0Xra.s]
         ignore line: [GNU C23 (Rev5  Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2374,8 +2359,8 @@ events:
         ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 8ce1135867793bb4ef554b26be63cf3e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_5382b.dir/']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccjTfHbC.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_1cf11.dir/']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj C:\\Users\\jhoan\\AppData\\Local\\Temp\\cc3O0Xra.s]
         ignore line: [GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46]
         ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
@@ -2386,8 +2371,8 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\gcc.exe  -v -Wl -v CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj -o cmTC_5382b.exe -Wl --out-implib libcmTC_5382b.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\gcc.exe  -v -Wl -v CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj -o cmTC_1cf11.exe -Wl --out-implib libcmTC_1cf11.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe]
@@ -2405,13 +2390,13 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5382b.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_5382b.']
-        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccVGVu0Y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5382b.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_5382b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1cf11.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_1cf11.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccOk1kZX.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1cf11.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_1cf11.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccVGVu0Y.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccOk1kZX.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -2433,7 +2418,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_5382b.exe] ==> ignore
+          arg [cmTC_1cf11.exe] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o]
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0]
@@ -2443,9 +2428,9 @@ events:
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_5382b.dll.a] ==> ignore
+          arg [libcmTC_1cf11.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2470,7 +2455,7 @@ events:
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
         ignore line: [collect2 version 16.1.0]
-        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccVGVu0Y.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_5382b.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_5382b.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_5382b.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccOk1kZX.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_1cf11.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_1cf11.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_1cf11.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
         linker tool for 'C': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -2511,8 +2496,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-wpffur"
-      binary: "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-wpffur"
+      source: "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-q6a16n"
+      binary: "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-q6a16n"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2523,10 +2508,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-wpffur'
+        Change Dir: 'C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-q6a16n'
         
-        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_8e02b
-        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe   -v -o CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_4c49f
+        [1/2] C:\\msys64\\ucrt64\\bin\\g++.exe   -v -o CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\g++.exe
         Target: x86_64-w64-mingw32
@@ -2534,8 +2519,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_8e02b.dir/'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8e02b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccisZf9Z.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_4c49f.dir/'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4c49f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccdkoVXe.s
         GNU C++20 (Rev5, Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 16.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
         
@@ -2559,13 +2544,13 @@ events:
          C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed
         End of search list.
         Compiler executable checksum: c17fb94a142b10fdb3ae88ea0e837cbf
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_8e02b.dir/'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccisZf9Z.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_4c49f.dir/'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccdkoVXe.s
         GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe  -v -Wl,-v CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_8e02b.exe -Wl,--out-implib,libcmTC_8e02b.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe  -v -Wl,-v CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_4c49f.exe -Wl,--out-implib,libcmTC_4c49f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\g++.exe
         COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe
@@ -2576,12 +2561,12 @@ events:
         gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8e02b.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_8e02b.'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccvAdyrg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_8e02b.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_8e02b.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c49f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4c49f.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccd8uuXO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4c49f.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_4c49f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         collect2 version 16.1.0
-        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccvAdyrg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_8e02b.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_8e02b.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccd8uuXO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4c49f.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_4c49f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         GNU ld (GNU Binutils) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8e02b.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_8e02b.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c49f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4c49f.'
         
       exitCode: 0
   -
@@ -2620,10 +2605,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-wpffur']
+        ignore line: [Change Dir: 'C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/CMakeFiles/CMakeScratch/TryCompile-q6a16n']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_8e02b]
-        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\g++.exe   -v -o CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): C:/msys64/ucrt64/bin/ninja.exe -v cmTC_4c49f]
+        ignore line: [[1/2] C:\\msys64\\ucrt64\\bin\\g++.exe   -v -o CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2631,8 +2616,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.0 (Rev5  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_8e02b.dir/']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8e02b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccisZf9Z.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_4c49f.dir/']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_4c49f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccdkoVXe.s]
         ignore line: [GNU C++20 (Rev5  Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2656,8 +2641,8 @@ events:
         ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: c17fb94a142b10fdb3ae88ea0e837cbf]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_8e02b.dir/']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccisZf9Z.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_4c49f.dir/']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccdkoVXe.s]
         ignore line: [GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46]
         ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
@@ -2668,8 +2653,8 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe  -v -Wl -v CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_8e02b.exe -Wl --out-implib libcmTC_8e02b.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\ucrt64\\bin\\g++.exe  -v -Wl -v CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_4c49f.exe -Wl --out-implib libcmTC_4c49f.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe]
@@ -2687,13 +2672,13 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8e02b.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_8e02b.']
-        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccvAdyrg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_8e02b.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_8e02b.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4c49f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_4c49f.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccd8uuXO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4c49f.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_4c49f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccvAdyrg.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccd8uuXO.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2715,7 +2700,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_8e02b.exe] ==> ignore
+          arg [cmTC_4c49f.exe] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o]
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0]
@@ -2725,9 +2710,9 @@ events:
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_8e02b.dll.a] ==> ignore
+          arg [libcmTC_4c49f.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2753,7 +2738,7 @@ events:
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
         ignore line: [collect2 version 16.1.0]
-        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccvAdyrg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_8e02b.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_8e02b.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_8e02b.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\jhoan\\AppData\\Local\\Temp\\ccd8uuXO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_4c49f.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v CMakeFiles/cmTC_4c49f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_4c49f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
         linker tool for 'CXX': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]

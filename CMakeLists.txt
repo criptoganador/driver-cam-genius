@@ -34,6 +34,8 @@ set(SOURCES
     src/main.cpp
     src/driver_core.cpp
     src/genius_ilook_317.cpp
+    src/bandwidth_manager.cpp
+    src/video_capture.cpp
 )
 
 add_executable(driver_genius ${SOURCES})
@@ -41,6 +43,7 @@ add_executable(driver_genius ${SOURCES})
 # ─── Include directories ───────────────────────────────────────────────────────
 target_include_directories(driver_genius PRIVATE
     ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/SDL2/include
     C:/msys64/ucrt64/include
 )
 
@@ -51,10 +54,16 @@ target_compile_options(driver_genius PRIVATE
     -O0
 )
 
+# ─── Link directories ──────────────────────────────────────────────────────────
+target_link_directories(driver_genius PRIVATE
+    ${CMAKE_SOURCE_DIR}/SDL2/lib
+)
+
 # ─── Windows libraries ─────────────────────────────────────────────────────────
 # MinGW on MSYS2 links against import libs (.a) bundled in ucrt64 —
 # no MSVC .lib files required.
 target_link_libraries(driver_genius PRIVATE
+    SDL2
     setupapi
     winusb
 )

@@ -14,6 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_directories",
 			"target_link_libraries",
 			"target_compile_options",
 			"target_include_directories"
@@ -30,25 +31,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 39,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 57,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 48,
+				"line" : 65,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 42,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 44,
 				"parent" : 0
 			}
 		]
@@ -67,23 +74,27 @@
 					"fragment" : "-g -std=c++23"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"fragment" : "-Wextra"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"fragment" : "-O0"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/SDL2/include"
 				}
 			],
 			"language" : "CXX",
@@ -99,7 +110,9 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -114,11 +127,21 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\jhoan\\Desktop\\APPDED~1\\DRIVER~1\\SDL2\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lSDL2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "-lsetupapi",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
+				"backtrace" : 3,
 				"fragment" : "-lwinusb",
 				"role" : "libraries"
 			},
@@ -132,11 +155,15 @@
 	"linkLibraries" : 
 	[
 		{
-			"backtrace" : 2,
+			"backtrace" : 3,
+			"fragment" : "SDL2"
+		},
+		{
+			"backtrace" : 3,
 			"fragment" : "setupapi"
 		},
 		{
-			"backtrace" : 2,
+			"backtrace" : 3,
 			"fragment" : "winusb"
 		}
 	],
@@ -155,7 +182,9 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3,
+				4
 			]
 		}
 	],
@@ -177,6 +206,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/genius_ilook_317.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/bandwidth_manager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/video_capture.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

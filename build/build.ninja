@@ -53,7 +53,7 @@ build CMakeFiles/driver_genius.dir/src/main.cpp.obj: CXX_COMPILER__driver_genius
   CONFIG = Debug
   DEP_FILE = CMakeFiles\driver_genius.dir\src\main.cpp.obj.d
   FLAGS = -g -std=c++23 -Wall -Wextra -O0
-  INCLUDES = -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src"
+  INCLUDES = -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src" -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/SDL2/include"
   OBJECT_DIR = CMakeFiles\driver_genius.dir
   OBJECT_FILE_DIR = CMakeFiles\driver_genius.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\driver_genius.dir
@@ -62,7 +62,7 @@ build CMakeFiles/driver_genius.dir/src/driver_core.cpp.obj: CXX_COMPILER__driver
   CONFIG = Debug
   DEP_FILE = CMakeFiles\driver_genius.dir\src\driver_core.cpp.obj.d
   FLAGS = -g -std=c++23 -Wall -Wextra -O0
-  INCLUDES = -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src"
+  INCLUDES = -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src" -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/SDL2/include"
   OBJECT_DIR = CMakeFiles\driver_genius.dir
   OBJECT_FILE_DIR = CMakeFiles\driver_genius.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\driver_genius.dir
@@ -71,7 +71,25 @@ build CMakeFiles/driver_genius.dir/src/genius_ilook_317.cpp.obj: CXX_COMPILER__d
   CONFIG = Debug
   DEP_FILE = CMakeFiles\driver_genius.dir\src\genius_ilook_317.cpp.obj.d
   FLAGS = -g -std=c++23 -Wall -Wextra -O0
-  INCLUDES = -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src"
+  INCLUDES = -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src" -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/SDL2/include"
+  OBJECT_DIR = CMakeFiles\driver_genius.dir
+  OBJECT_FILE_DIR = CMakeFiles\driver_genius.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\driver_genius.dir
+
+build CMakeFiles/driver_genius.dir/src/bandwidth_manager.cpp.obj: CXX_COMPILER__driver_genius_unscanned_Debug C$:/Users/jhoan/Desktop/app$ de$ desarrollo/driver-genius-look/src/bandwidth_manager.cpp || cmake_object_order_depends_target_driver_genius
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\driver_genius.dir\src\bandwidth_manager.cpp.obj.d
+  FLAGS = -g -std=c++23 -Wall -Wextra -O0
+  INCLUDES = -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src" -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/SDL2/include"
+  OBJECT_DIR = CMakeFiles\driver_genius.dir
+  OBJECT_FILE_DIR = CMakeFiles\driver_genius.dir\src
+  TARGET_SUPPORT_DIR = CMakeFiles\driver_genius.dir
+
+build CMakeFiles/driver_genius.dir/src/video_capture.cpp.obj: CXX_COMPILER__driver_genius_unscanned_Debug C$:/Users/jhoan/Desktop/app$ de$ desarrollo/driver-genius-look/src/video_capture.cpp || cmake_object_order_depends_target_driver_genius
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\driver_genius.dir\src\video_capture.cpp.obj.d
+  FLAGS = -g -std=c++23 -Wall -Wextra -O0
+  INCLUDES = -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/src" -I"C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/SDL2/include"
   OBJECT_DIR = CMakeFiles\driver_genius.dir
   OBJECT_FILE_DIR = CMakeFiles\driver_genius.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\driver_genius.dir
@@ -84,10 +102,11 @@ build CMakeFiles/driver_genius.dir/src/genius_ilook_317.cpp.obj: CXX_COMPILER__d
 #############################################
 # Link the executable driver_genius.exe
 
-build driver_genius.exe: CXX_EXECUTABLE_LINKER__driver_genius_Debug CMakeFiles/driver_genius.dir/src/main.cpp.obj CMakeFiles/driver_genius.dir/src/driver_core.cpp.obj CMakeFiles/driver_genius.dir/src/genius_ilook_317.cpp.obj
+build driver_genius.exe: CXX_EXECUTABLE_LINKER__driver_genius_Debug CMakeFiles/driver_genius.dir/src/main.cpp.obj CMakeFiles/driver_genius.dir/src/driver_core.cpp.obj CMakeFiles/driver_genius.dir/src/genius_ilook_317.cpp.obj CMakeFiles/driver_genius.dir/src/bandwidth_manager.cpp.obj CMakeFiles/driver_genius.dir/src/video_capture.cpp.obj
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = -lsetupapi  -lwinusb  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lSDL2  -lsetupapi  -lwinusb  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/Users/jhoan/Desktop/APPDED~1/DRIVER~1/SDL2/lib
   OBJECT_DIR = CMakeFiles\driver_genius.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

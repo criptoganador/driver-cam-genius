@@ -7,3 +7,4 @@
 -isystemC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include
 -isystemC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed
 -isystemC:/msys64/ucrt64/include
+-I./SDL2/include

@@ -14,7 +14,8 @@
         "--background-index",
         "--clang-tidy",
         "--header-insertion=never",
-        "--log=error"
+        "--log=error",
+        "--query-driver=C:\\msys64\\ucrt64\\bin\\g++.exe"
     ],
 
     // ─── C/C++ IntelliSense: desactivar (usamos clangd) ─────────────────────

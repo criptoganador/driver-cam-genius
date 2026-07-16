@@ -1,5 +1,9 @@
 # ninja log v7
-27	4098	8058457739292366	CMakeFiles/driver_genius.dir/src/genius_ilook_317.cpp.obj	5a39e58284ef4e13
-22	4190	8058457739292366	CMakeFiles/driver_genius.dir/src/driver_core.cpp.obj	4032b4e0799c6e4e
-17	4192	8058457739135795	CMakeFiles/driver_genius.dir/src/main.cpp.obj	ccfe8dd2605ce849
-4192	4984	8058457781016310	driver_genius.exe	6332edb2b554aecf
+344	33361	8059330194824900	CMakeFiles/driver_genius.dir/src/bandwidth_manager.cpp.obj	e6628f7145f09beb
+349	35135	8059330194972866	CMakeFiles/driver_genius.dir/src/video_capture.cpp.obj	62c23e5ffbc2ac01
+339	32833	8059330194824900	CMakeFiles/driver_genius.dir/src/genius_ilook_317.cpp.obj	3f3e50da708df69f
+275	34061	8059330194226230	CMakeFiles/driver_genius.dir/src/driver_core.cpp.obj	fa8a926dfa25654c
+152	10170	8059331464317804	CMakeFiles/driver_genius.dir/src/main.cpp.obj	5f3c64e9c9ef589a
+10171	10663	8059331564513496	driver_genius.exe	2f94839a3c5c8baf
+68	3833	8059398135903205	build.ninja	13e6d445d529009d
+68	3833	8059398135064097	C:/Users/jhoan/Desktop/app de desarrollo/driver-genius-look/build/cmake_install.cmake	13e6d445d529009d
